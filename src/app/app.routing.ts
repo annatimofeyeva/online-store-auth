@@ -5,6 +5,8 @@ import { AboutComponent }   from './about/about.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { AlbumDetailComponent }   from './album-detail/album-detail.component';
 import { AdminComponent }   from './admin/admin.component';
+import { PrivateComponent } from './private/private.component';
+import { PublicComponent } from './public/public.component';
 
 
 
@@ -29,7 +31,19 @@ const appRoutes: Routes = [
 {
     path: 'admin',
     component: AdminComponent
-  }
+  },
+
+  {
+      path: 'private',
+      component: PrivateComponent
+    },
+
+    {
+        path: 'public',
+        component: PublicComponent
+      }
+
+
 ];
 
 

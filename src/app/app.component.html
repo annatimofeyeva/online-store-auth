@@ -4,6 +4,8 @@
       <a class="navbar-brand" routerLink="">Authentication Example</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
+      <li *ngIf="isLoggedIn"><a routerLink="private">Private</a></li>
+      <li><a routerLink="public">Public</a></li>
       <li *ngIf="isLoggedIn">
         <a>{{userName}}</a>
         <a (click)="logout()">Log out</a>

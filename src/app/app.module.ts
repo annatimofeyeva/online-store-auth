@@ -13,7 +13,9 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
 import { EditAlbumComponent } from './edit-album/edit-album.component';
-import { AngularFireAuthModule } from 'angularfire2/auth'
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { PrivateComponent } from './private/private.component';
+import { PublicComponent } from './public/public.component'
 
 
 export const firebaseConfig = {
@@ -31,7 +33,9 @@ export const firebaseConfig = {
     MarketplaceComponent,
     AlbumDetailComponent,
     AdminComponent,
-    EditAlbumComponent
+    EditAlbumComponent,
+    PrivateComponent,
+    PublicComponent
   ],
   imports: [
     BrowserModule,
